@@ -36,6 +36,17 @@ Esta automação foi desenvolvida no **n8n** para criar um fluxo contínuo e int
 
 ![Monitoramento de Execução](./145603.png)
 
+
+---
+
+### 💡 Nota sobre a Execução do Envio (Z-API)
+
+Nos prints de execução do fluxo, o nó final **HTTP Request (Z-API)** apresenta um aviso de erro temporário (`400 Bad Request`). Isso ocorre exclusivamente devido à suspensão de saldo/cota na instância de testes utilizada no gateway do WhatsApp durante a geração da documentação.
+
+**Comportamento em Produção:**
+* A lógica de negócio, extração de intenção via LLM e armazenamento em banco (PostgreSQL) completam 100% da execução com sucesso.
+* Com uma chave/instância ativa na Z-API, a payload já formatada pelo nó `Edit Fields` é disparada instantaneamente ao número cadastrado.
+
 ## 🚀 Principais Funcionalidades
 
 * 📥 **Recepção de Webhooks:** Captura automática de dados e mensagens em tempo real.
