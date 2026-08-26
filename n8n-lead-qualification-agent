@@ -20,6 +20,22 @@ Esta automação foi desenvolvida no **n8n** para criar um fluxo contínuo e int
 
 ---
 
+## 📌 Visão Geral do Fluxo
+
+![Fluxo Completo n8n](./150302.png)
+
+---
+
+## 🤖 Processamento e Saída do AI Agent
+
+![Output do Agente de IA](./150427.png)
+
+---
+
+## 🛠️ Arquitetura e Monitoramento de Integrações
+
+![Monitoramento de Execução](./145603.png)
+
 ## 🚀 Principais Funcionalidades
 
 * 📥 **Recepção de Webhooks:** Captura automática de dados e mensagens em tempo real.
